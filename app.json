@@ -1,0 +1,11 @@
+{
+  "name": "Start Go",
+  "description": "Go Example",
+  "keywords": [
+    "go",
+    "sample",
+    "example"
+  ],
+  "website": "https://github.com/adamtamics/go-test",
+  "repository": "https://github.com/adamtamics/go-test"
+}
