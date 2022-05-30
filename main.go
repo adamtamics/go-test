@@ -19,6 +19,10 @@ func main() {
 		fmt.Fprintf(w, "Hi")
 	})
 
+	val, present := os.LookupEnv("PORT")
+	fmt.Printf("PORT env variable present: %t\n", present)
+	fmt.Println(val)
+
 	log.Fatal(http.ListenAndServe(getenv("PORT", ":8081"), nil))
 
 }
