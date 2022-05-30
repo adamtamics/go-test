@@ -23,7 +23,7 @@ func main() {
 	fmt.Printf("PORT env variable present: %t\n", present)
 	fmt.Println(val)
 
-	log.Fatal(http.ListenAndServe(getenv("PORT", ":8081"), nil))
+	log.Fatal(http.ListenAndServe(":"+getenv("PORT", "8081"), nil))
 
 }
 
